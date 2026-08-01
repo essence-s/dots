@@ -1,0 +1,9 @@
+-- Monitors
+-- Auto-detected by Hyprland by default.
+-- Add specific monitors here if needed:
+-- hl.monitor({
+--     name = "eDP-1",
+--     resolution = { width = 1920, height = 1080 },
+--     position = { x = 0, y = 0 },
+--     scale = 1
+-- })
