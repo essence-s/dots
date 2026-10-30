@@ -1,3 +1,12 @@
+hl.env("GDK_WAYLAND_DISABLE", "ext_background_effect_manager_v1")
+
+hl.config({
+    cursor = {
+        default_monitor = "",
+        no_hardware_cursors = false,
+    },
+})
+
 hl.config({
     general = {
         layout = "scrolling",
