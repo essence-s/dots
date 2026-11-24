@@ -6,6 +6,9 @@ hl.bind(mod .. " + T", hl.dsp.exec_cmd("kitty"))
 hl.bind(mod .. " + B", hl.dsp.exec_cmd("zen-browser"))
 hl.bind(mod .. " + C", hl.dsp.exec_cmd("code"))
 hl.bind(mod .. " + E", hl.dsp.exec_cmd("nautilus"))
+hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd("flatpak run io.missioncenter.MissionCenter"),
+    { description = "Mission Center" })
+
 
 -- Window
 -- hl.bind(mod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }),
@@ -143,8 +146,11 @@ hl.bind("ALT + P", hl.dsp.exec_cmd("echo 'cycle pause' | socat - /tmp/mpvsocket"
 
 
 -- RUST
--- hl.bind("SUPER, R", "exec", "/ruta/a/tu/proyecto/target/release/tu_programa")
 hl.bind(mod .. " + Z",
     hl.dsp.exec_cmd("sh -c 'pkill fondito; /home/styv/work/RustProjects/fondito/target/release/fondito'"))
 hl.bind(mod .. " + X",
     hl.dsp.exec_cmd("sh -c 'pkill barrita; /home/styv/work/RustProjects/barrita/target/release/barrita'"))
+
+
+-- Grabar Pantalla
+hl.bind(mod .. " + SHIFT + R", hl.dsp.exec_cmd("/home/styv/.local/bin/gsr-record-toggle"))
