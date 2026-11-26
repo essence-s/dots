@@ -19,7 +19,7 @@ hl.bind(mod .. " + Q", hl.dsp.window.close(), { description = "Window: Close" })
 -- Move/resize floating windows
 hl.bind(mod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true, description = "Window: Move" })
 hl.bind(mod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true, description = "Window: Resize" })
-hl.bind(mod .. " + mouse:274", hl.dsp.window.drag(), { mouse = true, drag = true })
+hl.bind(mod .. " + mouse:274", hl.dsp.window.drag(), { mouse = true })
 -- Scrolling layout
 hl.bind(mod .. " + H", hl.dsp.layout("focus l"))
 hl.bind(mod .. " + L", hl.dsp.layout("focus r"))
